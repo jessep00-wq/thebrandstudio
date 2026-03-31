@@ -91,9 +91,12 @@
   const form = document.getElementById('contactForm');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.setAttribute('action', 'https://formspree.io/f/meepkdnr');
+  form.setAttribute('method', 'POST');
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     const btn = form.querySelector('[type="submit"]');
     const name = form.querySelector('#name').value.trim();
     const email = form.querySelector('#email').value.trim();
@@ -103,20 +106,33 @@
       return;
     }
 
-    // Simulate submission
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.textContent = 'Send Inquiry';
-      form.reset();
-      showFormMessage(
-        form,
-        '✓ Inquiry received. Thank you — I\'ll be in touch within 2–3 business days.',
-        'success'
-      );
-    }, 1200);
+    try {
+      const response = await fetch('https://formspree.io/f/meepkdnr', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.querySelector('#name').value,
+          email: form.querySelector('#email').value,
+          package: form.querySelector('#package').value,
+          message: form.querySelector('#message').value
+        })
+      });
+
+      if (response.ok) {
+        form.reset();
+        showFormMessage(form, '✓ Inquiry received. Thank you — I\'ll be in touch within 2–3 business days.', 'success');
+      } else {
+        showFormMessage(form, 'Something went wrong. Please try again or email directly.', 'error');
+      }
+    } catch (err) {
+      showFormMessage(form, 'Something went wrong. Please try again.', 'error');
+    }
+
+    btn.disabled = false;
+    btn.textContent = 'Send Inquiry';
   });
 
   function showFormMessage(form, text, type) {
