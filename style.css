@@ -134,6 +134,19 @@ table { border-collapse: collapse; width: 100%; }
 }
 
 ::selection { background: var(--color-primary-light); color: var(--color-text); }
+
+/* Screen reader only — visible to search engines and assistive tech, hidden visually */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
 
 /* ─── Layout Utilities ─── */
