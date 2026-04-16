@@ -166,6 +166,57 @@
 }
 .table-row-highlight:hover td { background: var(--color-primary-light) !important; }
 
+/* ─── Hero Image ─── */
+.article-hero-image {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding-block: 0;
+}
+.article-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+/* ─── Pullquote ─── */
+.article-pullquote {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-primary);
+  border-left: 3px solid var(--color-primary);
+  margin: var(--space-10) 0;
+  padding: var(--space-4) 0 var(--space-4) var(--space-8);
+  position: relative;
+}
+
+/* ─── Inline CTA Box ─── */
+.article-cta-box {
+  background: var(--warm-bg, #F3EDE4);
+  border: 1px solid var(--warm-border, #E4DDD5);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  margin-block: var(--space-10);
+  text-align: center;
+}
+[data-theme="dark"] .article-cta-box {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+.article-cta-box p {
+  color: var(--color-text) !important;
+  margin-bottom: var(--space-5) !important;
+  font-size: var(--text-sm) !important;
+  max-width: 480px;
+  margin-inline: auto;
+}
+.article-cta-box .btn { display: inline-block; }
+
 /* ─── Article CTA Block ─── */
 .article-cta-block {
   background: var(--color-surface);
