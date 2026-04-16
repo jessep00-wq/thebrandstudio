@@ -50,7 +50,7 @@ module.exports = async function handler(req, res) {
       method: 'POST',
       headers: { 'Authorization': 'Bearer ' + RESEND_API_KEY, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: 'onboarding@resend.dev',
+        from: 'Jessica Smith <jessica@thebrandstudio.studio>',
         to: [email],
         reply_to: 'jessep_00@hotmail.com',
         subject: 'Your 30 Caption Starters are here',
