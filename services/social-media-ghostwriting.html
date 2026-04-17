@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Ghostwriting for Founders &amp; Personal Brands | Brand Voice Studio</title>
+  <meta name="description" content="Social media ghostwriting services for founders, executives, and personal brands. Voice-aligned posts across Instagram, LinkedIn, and more. Retainers from $500." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Social Media Ghostwriting for Founders &amp; Personal Brands | Brand Voice Studio" />
+  <meta property="og:description" content="Social media ghostwriting services for founders, executives, and personal brands. Voice-aligned posts across Instagram, LinkedIn, and more. Retainers from $500." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thebrandstudio.studio/services/social-media-ghostwriting.html" />
+  <meta property="og:image" content="https://thebrandstudio.studio/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Brand Voice Studio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Social Media Ghostwriting for Founders &amp; Personal Brands | Brand Voice Studio" />
+  <meta name="twitter:description" content="Social media ghostwriting services for founders, executives, and personal brands. Voice-aligned posts across Instagram, LinkedIn, and more. Retainers from $500." />
+  <meta name="twitter:image" content="https://thebrandstudio.studio/og-image.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://thebrandstudio.studio/services/social-media-ghostwriting.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Social Media Ghostwriting for Founders &amp; Personal Brands",
+    "description": "Done-for-you social media ghostwriting service for founders, executives, and personal brands. Voice-aligned posts across Instagram, LinkedIn, and more.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Brand Voice Studio",
+      "url": "https://thebrandstudio.studio/"
+    },
+    "serviceType": "Social Media Ghostwriting",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Essential",
+        "price": "500",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "RecurringCharge",
+          "billingIncrement": "Month"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Elevated",
+        "price": "1000",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "RecurringCharge",
+          "billingIncrement": "Month"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Private Client",
+        "price": "1800",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "RecurringCharge",
+          "billingIncrement": "Month"
+        }
+      }
+    ],
+    "areaServed": "Worldwide",
+    "url": "https://thebrandstudio.studio/services/social-media-ghostwriting.html"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thebrandstudio.studio/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://thebrandstudio.studio/services/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Social Media Ghostwriting",
+        "item": "https://thebrandstudio.studio/services/social-media-ghostwriting.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Page-specific overrides -->
+  <style>
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 0.8125rem;
+      color: var(--color-text-muted, #6b5d50);
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a {
+      color: var(--color-text-muted, #6b5d50);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .breadcrumb a:hover { color: var(--color-primary, #B8604A); }
+    .breadcrumb-sep { opacity: 0.5; }
+    .breadcrumb-current { color: var(--color-primary, #B8604A); font-weight: 500; }
+
+    /* ── Service Hero ── */
+    .service-hero {
+      padding: 5rem 0 4rem;
+      background: var(--color-bg, #FAF8F4);
+    }
+    .service-hero .container { max-width: 760px; }
+    .service-hero h1 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--color-text, #1A1208);
+      margin: 0 0 1.25rem;
+    }
+    .article-lead {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 1.125rem;
+      line-height: 1.75;
+      color: var(--color-text-muted, #6b5d50);
+      margin: 0;
+      max-width: 640px;
+    }
+
+    /* ── Dark Section (espresso) ── */
+    .dark-section {
+      background: var(--color-text, #1A1208);
+      color: #FAF8F4;
+      padding: 5rem 0;
+    }
+    .dark-section .section-label {
+      color: var(--color-secondary, #C9A96E);
+      border-color: rgba(201, 169, 110, 0.3);
+    }
+    .dark-section h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4vw, 2.75rem);
+      font-weight: 400;
+      color: #FAF8F4;
+      line-height: 1.2;
+      margin: 0 0 1.5rem;
+    }
+    .dark-section p {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(250, 248, 244, 0.78);
+      margin: 0 0 1.25rem;
+      max-width: 680px;
+    }
+    .dark-section p:last-of-type { margin-bottom: 0; }
+
+    .pull-quote {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.375rem, 3vw, 1.875rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-secondary, #C9A96E);
+      border-left: 3px solid var(--color-primary, #B8604A);
+      padding: 1.25rem 0 1.25rem 1.75rem;
+      margin: 2.5rem 0 0;
+      line-height: 1.5;
+    }
+
+    /* ── What You Get (warm section) ── */
+    .what-you-get {
+      background: var(--warm-bg, #F3EDE4);
+      padding: 5rem 0;
+      border-top: 1px solid var(--warm-border, #E4DDD5);
+      border-bottom: 1px solid var(--warm-border, #E4DDD5);
+    }
+    .what-you-get h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4vw, 2.625rem);
+      font-weight: 400;
+      color: var(--color-text, #1A1208);
+      line-height: 1.2;
+      margin: 0 0 2.5rem;
+      max-width: 640px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .features-grid { grid-template-columns: 1fr; }
+    }
+    .feature-card {
+      background: var(--color-bg, #FAF8F4);
+      border: 1px solid var(--warm-border, #E4DDD5);
+      border-radius: 6px;
+      padding: 1.75rem 1.5rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      border-color: var(--color-primary, #B8604A);
+      box-shadow: 0 4px 20px rgba(184, 96, 74, 0.08);
+    }
+    .feature-card-icon {
+      width: 36px;
+      height: 36px;
+      color: var(--color-primary, #B8604A);
+      margin-bottom: 1rem;
+    }
+    .feature-card h3 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--color-text, #1A1208);
+      margin: 0 0 0.625rem;
+    }
+    .feature-card p {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--color-text-muted, #6b5d50);
+      margin: 0;
+    }
+
+    /* ── Process Section ── */
+    .process-section {
+      padding: 5rem 0;
+      background: var(--color-bg, #FAF8F4);
+    }
+    .process-section h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4vw, 2.625rem);
+      font-weight: 400;
+      color: var(--color-text, #1A1208);
+      margin: 0 0 3rem;
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      position: relative;
+    }
+    @media (max-width: 900px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+    .process-step {
+      position: relative;
+    }
+    .process-step-number {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--color-primary, #B8604A);
+      opacity: 0.35;
+      line-height: 1;
+      margin-bottom: 0.75rem;
+    }
+    .process-step h3 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--color-text, #1A1208);
+      margin: 0 0 0.5rem;
+    }
+    .process-step p {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: var(--color-text-muted, #6b5d50);
+      margin: 0;
+    }
+    .process-step-line {
+      position: absolute;
+      top: 1.75rem;
+      right: -1rem;
+      width: 2rem;
+      height: 1px;
+      background: var(--warm-border, #E4DDD5);
+    }
+    @media (max-width: 900px) {
+      .process-step-line { display: none; }
+    }
+
+    /* ── Pricing Section ── */
+    .service-pricing {
+      background: var(--warm-bg, #F3EDE4);
+      padding: 5rem 0;
+      border-top: 1px solid var(--warm-border, #E4DDD5);
+    }
+    .service-pricing h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4vw, 2.625rem);
+      font-weight: 400;
+      color: var(--color-text, #1A1208);
+      margin: 0 0 0.5rem;
+      text-align: center;
+    }
+    .pricing-intro {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 1rem;
+      color: var(--color-text-muted, #6b5d50);
+      text-align: center;
+      margin: 0 0 2.5rem;
+    }
+
+    /* ── Testimonials ── */
+    .service-testimonials {
+      padding: 5rem 0;
+      background: var(--color-bg, #FAF8F4);
+    }
+    .service-testimonials h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4vw, 2.625rem);
+      font-weight: 400;
+      color: var(--color-text, #1A1208);
+      text-align: center;
+      margin: 0 0 2.5rem;
+    }
+
+    /* ── FAQ Section ── */
+    .service-faq {
+      background: var(--warm-bg, #F3EDE4);
+      padding: 5rem 0;
+      border-top: 1px solid var(--warm-border, #E4DDD5);
+      border-bottom: 1px solid var(--warm-border, #E4DDD5);
+    }
+    .service-faq h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4vw, 2.625rem);
+      font-weight: 400;
+      color: var(--color-text, #1A1208);
+      margin: 0 0 2.5rem;
+    }
+    .faq-list { list-style: none; padding: 0; margin: 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--warm-border, #E4DDD5);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--warm-border, #E4DDD5); }
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.375rem 0;
+      cursor: pointer;
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: 1.1875rem;
+      font-weight: 500;
+      color: var(--color-text, #1A1208);
+      list-style: none;
+      user-select: none;
+      transition: color 0.2s;
+    }
+    .faq-q:hover { color: var(--color-primary, #B8604A); }
+    .faq-q::marker, .faq-q::-webkit-details-marker { display: none; }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: var(--color-primary, #B8604A);
+      transition: transform 0.25s;
+      margin-top: 2px;
+    }
+    details[open] .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: var(--color-text-muted, #6b5d50);
+      padding: 0 2rem 1.375rem 0;
+      margin: 0;
+    }
+
+    /* ── Final CTA ── */
+    .service-final-cta {
+      background: var(--color-text, #1A1208);
+      padding: 6rem 0;
+      text-align: center;
+    }
+    .service-final-cta h2 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(1.875rem, 4.5vw, 3rem);
+      font-weight: 400;
+      color: #FAF8F4;
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .service-final-cta p {
+      font-family: var(--font-body, 'DM Sans', sans-serif);
+      font-size: 0.9375rem;
+      color: rgba(250, 248, 244, 0.65);
+      margin: 0 0 2.25rem;
+    }
+
+    /* ── Utility ── */
+    .container--narrow { max-width: 720px; }
+    .section-label-centered { text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="../" class="logo" aria-label="Brand Voice Studio home">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="34" height="34" rx="3" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M9 13h18M9 18h14M9 23h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="27" cy="23" r="2.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Brand Voice Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../#for-you">For You</a>
+        <a href="../#about">About</a>
+        <a href="../#services">Services</a>
+        <a href="../#pricing">Pricing</a>
+        <a href="../blog/">Blog</a>
+        <a href="../#contact" class="nav-cta">Inquire</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="../#for-you">For You</a>
+      <a href="../#about">About</a>
+      <a href="../#services">Services</a>
+      <a href="../#pricing">Pricing</a>
+      <a href="../blog/">Blog</a>
+      <a href="../#contact" class="nav-cta-mobile">Inquire</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════ 1. HERO ═══════════════════════ -->
+    <section class="service-hero" aria-label="Social Media Ghostwriting — Introduction">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="../#services">Services</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span class="breadcrumb-current">Social Media Ghostwriting</span>
+        </nav>
+        <div class="section-label">Social Media Ghostwriting</div>
+        <h1>Social Media Ghostwriting for Founders &amp; Personal Brands</h1>
+        <p class="article-lead">The most visible founders on social media aren&rsquo;t always doing the writing. Ghostwriting lets you show up consistently, in your own voice, without it consuming your time.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 2. WHAT GHOSTWRITING MEANS ═══════════════════════ -->
+    <section class="dark-section" aria-labelledby="ghostwriting-heading">
+      <div class="container container--narrow">
+        <div class="section-label">Let&rsquo;s Be Direct</div>
+        <h2 id="ghostwriting-heading">Ghostwriting is how the most visible brands stay visible.</h2>
+        <p>Every polished founder you see posting consistently — with sharp hooks, thoughtful stories, and content that feels distinctly them — very likely has a <strong style="color: #FAF8F4;">social media ghostwriter</strong> behind the words. This isn&rsquo;t a secret. It&rsquo;s strategy. The best ghostwriting doesn&rsquo;t replace your voice; it amplifies it. A skilled <strong style="color: #FAF8F4;">brand voice copywriter</strong> learns how you think, how you communicate, and what you care about — then translates that into content that represents you accurately and powerfully.</p>
+        <p>Ghostwriting isn&rsquo;t inauthentic. Your ideas, your perspective, your experience — those are yours. What a ghostwriter provides is the craft: the structure, the rhythm, the discipline of showing up every single week without burning out. The result isn&rsquo;t content that sounds like someone else wrote it. It&rsquo;s content that sounds exactly like you on your sharpest, most articulate day.</p>
+        <blockquote class="pull-quote">
+          &ldquo;Your ideas. Your voice. Your brand. Written for you.&rdquo;
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 3. WHAT YOU GET ═══════════════════════ -->
+    <section class="what-you-get" aria-labelledby="included-heading">
+      <div class="container">
+        <div class="section-label">What&rsquo;s Included</div>
+        <h2 id="included-heading">Complete social media ghostwriting &mdash; across the platforms that matter</h2>
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <svg class="feature-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="3" width="7" height="18" rx="1.5"/><rect x="10" y="7" width="12" height="14" rx="1.5"/><path d="M10 3h12"/>
+            </svg>
+            <h3>Multi-Platform Writing</h3>
+            <p>Instagram, LinkedIn, Facebook, and more — adapted for each platform&rsquo;s tone, format, and audience. Your message, calibrated to context.</p>
+          </div>
+
+          <div class="feature-card">
+            <svg class="feature-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <h3>Full Voice Immersion</h3>
+            <p>Deep onboarding to study how you speak, write, and communicate. The result sounds like you — not like a copywriter trying to guess at who you are.</p>
+          </div>
+
+          <div class="feature-card">
+            <svg class="feature-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <h3>Monthly Caption Delivery</h3>
+            <p>Organized by week in Google Docs or Notion. Ready for you to review and publish — no reformatting, no guesswork.</p>
+          </div>
+
+          <div class="feature-card">
+            <svg class="feature-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            <h3>Hooks &amp; Storytelling</h3>
+            <p>Every post structured to earn attention — hook, story, insight, CTA. Writing that stops the scroll and gives your audience a reason to keep reading.</p>
+          </div>
+
+          <div class="feature-card">
+            <svg class="feature-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+            <h3>Revision Rounds Included</h3>
+            <p>One round of revisions per delivery. Most clients need very few — because the voice work done upfront means the writing lands from the start.</p>
+          </div>
+
+          <div class="feature-card">
+            <svg class="feature-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+            </svg>
+            <h3>Ongoing Voice Refinement</h3>
+            <p>The longer we work together, the sharper and more accurate the writing becomes. Long-term clients consistently say this is one of the greatest benefits of the retainer.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 4. PROCESS ═══════════════════════ -->
+    <section class="process-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-label">How It Works</div>
+        <h2 id="process-heading">How ghostwriting works at Brand Voice Studio</h2>
+        <div class="process-steps">
+
+          <div class="process-step">
+            <div class="process-step-number">01</div>
+            <h3>Apply &amp; Inquire</h3>
+            <p>Submit a short application so I can understand your brand, goals, and which tier fits where you are. I review every application personally within 2 business days.</p>
+            <div class="process-step-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-number">02</div>
+            <h3>Voice Onboarding</h3>
+            <p>We go deep on your voice. A discovery questionnaire, examples of writing you admire, and a conversation that gives me everything I need to write as you — not around you.</p>
+            <div class="process-step-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-number">03</div>
+            <h3>First Delivery</h3>
+            <p>Your first batch of ghostwritten captions arrives, organized by week and ready to review. You give feedback, I refine. Most clients are surprised by how close the first delivery lands.</p>
+            <div class="process-step-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-number">04</div>
+            <h3>Ongoing Partnership</h3>
+            <p>We settle into a rhythm. Monthly deliveries, optional check-ins, and a voice that gets sharper with every batch. You post. Your audience grows. You don&rsquo;t write a single caption.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 5. PRICING ═══════════════════════ -->
+    <section class="service-pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-label section-label-centered">Packages</div>
+        <h2 id="pricing-heading">Social media ghostwriting packages</h2>
+        <p class="pricing-intro">Three tiers designed for different stages of brand growth. All packages include weekly-organized delivery in Google Docs or Notion.</p>
+
+        <div class="pricing-grid">
+
+          <!-- Essential -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="pricing-tier-label">Essential</div>
+              <div class="pricing-price">$500</div>
+              <div class="pricing-period">per month</div>
+              <div class="pricing-tagline">A lighter level of support for brands building consistency.</div>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span><strong>15 captions</strong> per month</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Written for <strong>1 platform</strong></span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Organized by week</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Google Docs or Notion delivery</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>One revision round included</span></li>
+              <li class="feature-divider-item"><div class="feature-divider"></div></li>
+              <li class="best-for-label">Best for</li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Personal brands building consistency</span></li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Founders in an earlier growth season</span></li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Business owners who want elegant support without overcommitting</span></li>
+            </ul>
+            <a href="../index.html#contact" class="btn btn-outline pricing-cta">Get Started</a>
+          </div>
+
+          <!-- Elevated -->
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-card-header">
+              <div class="pricing-tier-label">Elevated</div>
+              <div class="pricing-price">$1,000</div>
+              <div class="pricing-period">per month</div>
+              <div class="pricing-tagline">A stronger content rhythm for brands ready to grow visibility.</div>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span><strong>30 captions</strong> per month</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Adapted for <strong>up to 2 platforms</strong></span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Organized by week</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Google Docs or Notion delivery</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>One revision round included</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Multi-platform tone adaptation</span></li>
+              <li class="feature-divider-item"><div class="feature-divider"></div></li>
+              <li class="best-for-label">Best for</li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Growing brands ready for a stronger content rhythm</span></li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Founders who want more visibility with less friction</span></li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Businesses that need a consistent presence across platforms</span></li>
+            </ul>
+            <a href="../index.html#contact" class="btn btn-primary pricing-cta">Get Started</a>
+          </div>
+
+          <!-- Private Client -->
+          <div class="pricing-card pricing-card--premium">
+            <div class="pricing-card-header">
+              <div class="pricing-tier-label">Private Client</div>
+              <div class="pricing-price">$1,800</div>
+              <div class="pricing-period">per month</div>
+              <div class="pricing-tagline">A more complete support model for brands that want a high-touch experience.</div>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span><strong>30 captions</strong> per month</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Platform-adjusted copy for <strong>up to 3 platforms</strong></span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Hashtag sets per post</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Story text for launches &amp; promotions</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Optional content calendar</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Light content planning support</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Google Docs or Notion delivery</span></li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Organized by week</span></li>
+              <li class="feature-divider-item"><div class="feature-divider"></div></li>
+              <li class="best-for-label">Best for</li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Established creators &amp; executives</span></li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>High-touch personal brands</span></li>
+              <li class="best-for"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Businesses that want complete, ongoing content support</span></li>
+            </ul>
+            <a href="../index.html#contact" class="btn btn-outline-light pricing-cta">Get Started</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 6. TESTIMONIALS ═══════════════════════ -->
+    <section class="service-testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-label" style="text-align:center">Client Results</div>
+        <h2 id="testimonials-heading">What founders are saying.</h2>
+        <div class="testimonials-grid">
+          <div class="tcard">
+            <div class="tcard-stars">★★★★★</div>
+            <blockquote class="tcard-quote">&ldquo;I kept putting off posting because I could never find the right words. Within the first week of receiving my captions, I published more than I had in the previous two months. They sounded exactly like me &mdash; maybe even better than me on my best day. It&rsquo;s the best investment I&rsquo;ve made in my brand this year.&rdquo;</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">DR</div>
+              <div><div class="tcard-name">Danielle R.</div><div class="tcard-role">Online Business Founder</div></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-stars">★★★★★</div>
+            <blockquote class="tcard-quote">&ldquo;I was skeptical that anyone could capture my voice &mdash; I&rsquo;m very particular about how I communicate. But the captions were so accurate to how I speak that my audience thought I&rsquo;d finally figured out how to be consistent. I haven&rsquo;t written a caption myself in four months.&rdquo;</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">SM</div>
+              <div><div class="tcard-name">Sarah M.</div><div class="tcard-role">Founder &amp; Brand Strategist</div></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-stars">★★★★★</div>
+            <blockquote class="tcard-quote">&ldquo;The Private Client package changed how I think about content entirely. I went from dreading my posting schedule to genuinely looking forward to it. My engagement is up and I&rsquo;ve had three new clients mention they found me through Instagram &mdash; something that had never happened before.&rdquo;</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">LK</div>
+              <div><div class="tcard-name">Lauren K.</div><div class="tcard-role">Executive Coach &amp; Speaker</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 7. FAQ ═══════════════════════ -->
+    <section class="service-faq" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <div class="section-label">FAQ</div>
+        <h2 id="faq-heading">Ghostwriting &mdash; what people ask first</h2>
+        <ul class="faq-list" role="list">
+
+          <li class="faq-item">
+            <details>
+              <summary class="faq-q">
+                Is ghostwriting dishonest?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </summary>
+              <p class="faq-a">No. Ghostwriting is a long-standing professional practice. What&rsquo;s published represents your ideas and perspective — I give them form. The voice is yours. The thinking is yours. The ghostwriter is simply the craftsperson who shapes it into content worth reading.</p>
+            </details>
+          </li>
+
+          <li class="faq-item">
+            <details>
+              <summary class="faq-q">
+                Will people be able to tell?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </summary>
+              <p class="faq-a">Not if it&rsquo;s done well. Good ghostwriting is indistinguishable from the person&rsquo;s own voice. That&rsquo;s the standard I hold every delivery to. The onboarding process exists precisely for this reason — so that by the time the first caption lands in your inbox, it already sounds like you.</p>
+            </details>
+          </li>
+
+          <li class="faq-item">
+            <details>
+              <summary class="faq-q">
+                What if my voice changes or evolves?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </summary>
+              <p class="faq-a">The relationship adapts. As we work together, your voice sharpens and I adjust. Long-term clients often say the writing gets noticeably better over time — not because I&rsquo;m changing the voice, but because I understand it more deeply with every batch. Evolution is expected and welcome.</p>
+            </details>
+          </li>
+
+          <li class="faq-item">
+            <details>
+              <summary class="faq-q">
+                Can you write for multiple platforms?
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </summary>
+              <p class="faq-a">Yes — the Elevated and Private Client tiers include multi-platform adaptation. The same core message is calibrated to fit Instagram, LinkedIn, and beyond. Each platform has its own rhythm and expectations, and the writing reflects that without losing the thread of your voice.</p>
+            </details>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 8. FINAL CTA ═══════════════════════ -->
+    <section class="service-final-cta" aria-label="Apply now">
+      <div class="container container--narrow">
+        <h2>Let your brand show up &mdash; without you writing every word.</h2>
+        <p>Applications reviewed within 2 business days. Limited spots available each month.</p>
+        <a href="../index.html#contact" class="btn btn-primary">Apply Now &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="../" class="logo" aria-label="Back to top">
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="34" height="34" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 13h18M9 18h14M9 23h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="27" cy="23" r="2.5" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">Brand Voice Studio</span>
+        </a>
+        <p class="footer-tagline">Refined content support for personal brands, creators, and founders.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <div class="footer-col-heading">Navigation</div>
+          <a href="../#for-you">For You</a>
+          <a href="../#about">About</a>
+          <a href="../#pricing">Packages</a>
+          <a href="../#faq">FAQ</a>
+          <a href="../blog/">Blog</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-heading">Services</div>
+          <a href="../#pricing">Essential Retainer</a>
+          <a href="../#pricing">Elevated Retainer</a>
+          <a href="../#pricing">Private Client</a>
+          <a href="../free/">Free Guide</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-heading">Connect</div>
+          <a href="https://www.instagram.com/jessica_smith0203/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/jessica.pettigrew3/" target="_blank" rel="noopener">Facebook</a>
+          <a href="../blog/">Blog</a>
+          <a href="../#contact">Inquire</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="footer-copy">&copy; 2026 Brand Voice Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Jessica Smith | Brand Voice Studio — Social Media Caption Writer</title>
+  <meta name="description" content="Meet Jessica Smith, the brand voice copywriter and social media ghostwriter behind Brand Voice Studio. Voice-aligned captions for personal brands, founders, and creators." />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="About Jessica Smith | Brand Voice Studio — Social Media Caption Writer" />
+  <meta property="og:description" content="Meet Jessica Smith, the brand voice copywriter and social media ghostwriter behind Brand Voice Studio. Voice-aligned captions for personal brands, founders, and creators." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://thebrandstudio.studio/about.html" />
+  <meta property="og:image" content="https://thebrandstudio.studio/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Brand Voice Studio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Jessica Smith | Brand Voice Studio — Social Media Caption Writer" />
+  <meta name="twitter:description" content="Meet Jessica Smith, the brand voice copywriter and social media ghostwriter behind Brand Voice Studio. Voice-aligned captions for personal brands, founders, and creators." />
+  <meta name="twitter:image" content="https://thebrandstudio.studio/og-image.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://thebrandstudio.studio/about.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jessica Smith",
+    "jobTitle": "Brand Voice Copywriter",
+    "description": "Brand voice copywriter and social media ghostwriter for personal brands, founders, and creators. Founder of Brand Voice Studio.",
+    "url": "https://thebrandstudio.studio/about.html",
+    "image": "https://thebrandstudio.studio/jessica-smith.jpg",
+    "sameAs": [
+      "https://www.instagram.com/jessica_smith0203/",
+      "https://www.facebook.com/jessica.pettigrew3/"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Brand Voice Studio",
+      "url": "https://thebrandstudio.studio/"
+    },
+    "knowsAbout": [
+      "brand voice copywriting",
+      "social media ghostwriting",
+      "caption writing retainer",
+      "personal brand content writing",
+      "Instagram captions"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD WebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Jessica Smith | Brand Voice Studio",
+    "description": "Meet Jessica Smith, the brand voice copywriter and social media ghostwriter behind Brand Voice Studio.",
+    "url": "https://thebrandstudio.studio/about.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Brand Voice Studio",
+      "url": "https://thebrandstudio.studio/"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://thebrandstudio.studio/jessica-smith.jpg"
+    },
+    "keywords": "brand voice copywriter, social media ghostwriter for founders, Jessica Smith Brand Voice Studio, personal brand content writer"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- About page-specific styles -->
+  <style>
+    /* ── Article Hero ── */
+    .article-hero {
+      padding: clamp(var(--space-16), 8vw, var(--space-28)) 0 clamp(var(--space-14), 7vw, var(--space-24));
+      background: var(--bg);
+      border-bottom: 1px solid var(--color-border);
+      text-align: center;
+    }
+    .article-hero .section-label {
+      margin-bottom: var(--space-5);
+    }
+    .article-hero-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--color-text);
+      max-width: 820px;
+      margin: 0 auto var(--space-6);
+    }
+    .article-lead {
+      font-family: var(--font-serif);
+      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ── About bio section (standalone variant) ── */
+    .about-bio-section {
+      padding: clamp(var(--space-16), 8vw, var(--space-28)) 0;
+      background: var(--bg);
+    }
+    .about-bio-label {
+      margin-bottom: var(--space-4);
+    }
+    .about-bio-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 400;
+      color: var(--color-text);
+      line-height: 1.2;
+      margin-bottom: var(--space-7);
+    }
+
+    /* ── The Studio — dark section ── */
+    .studio-section {
+      background: #1A1208;
+      padding: clamp(var(--space-16), 8vw, var(--space-28)) 0;
+      color: #fff;
+    }
+    .studio-section .section-label {
+      color: var(--gold) !important;
+      margin-bottom: var(--space-5);
+      text-align: center;
+    }
+    .studio-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 400;
+      color: #fff;
+      line-height: 1.2;
+      max-width: 760px;
+      margin: 0 auto var(--space-8);
+      text-align: center;
+    }
+    .studio-body {
+      max-width: 660px;
+      margin: 0 auto;
+    }
+    .studio-body p {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.85;
+      margin-bottom: var(--space-5);
+      text-align: center;
+    }
+    .studio-pull-quote {
+      max-width: 600px;
+      margin: var(--space-12) auto 0;
+      border-left: 3px solid var(--gold);
+      padding: var(--space-6) var(--space-8);
+      background: rgba(201,169,110,0.07);
+      border-radius: 0 4px 4px 0;
+    }
+    .studio-pull-quote p {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+      font-style: italic;
+      font-weight: 300;
+      color: rgba(255,255,255,0.92) !important;
+      line-height: 1.55;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+
+    /* ── Values / Approach cards ── */
+    .values-section {
+      background: var(--warm-bg);
+      padding: clamp(var(--space-16), 8vw, var(--space-28)) 0;
+    }
+    .values-section .section-label,
+    .values-section .section-heading {
+      text-align: center;
+    }
+    .values-section .section-heading {
+      margin-bottom: var(--space-12);
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    @media (max-width: 860px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+    .values-card {
+      background: var(--bg);
+      border: 1px solid var(--warm-border);
+      border-radius: 4px;
+      padding: var(--space-8);
+    }
+    .values-card-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(184,96,74,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-5);
+    }
+    .values-card-icon svg {
+      color: var(--color-primary);
+    }
+    .values-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--color-text);
+      margin-bottom: var(--space-3);
+    }
+    .values-card-body {
+      font-family: var(--font-sans);
+      font-size: 0.93rem;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+    }
+
+    /* ── Stats strip ── */
+    .stats-strip {
+      background: var(--bg);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: clamp(var(--space-10), 5vw, var(--space-16)) 0;
+    }
+    .stats-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .stats-inner { grid-template-columns: 1fr; gap: var(--space-8); }
+    }
+    .stat-divider {
+      border-left: 1px solid var(--color-border);
+    }
+    @media (max-width: 600px) {
+      .stat-divider { border-left: none; border-top: 1px solid var(--color-border); padding-top: var(--space-8); }
+    }
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 300;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: var(--space-2);
+    }
+    .stat-label {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      font-weight: 400;
+    }
+
+    /* ── About Page CTA — dark espresso ── */
+    .about-cta {
+      background: #1A1208;
+      padding: clamp(var(--space-16), 8vw, var(--space-28)) 0;
+      text-align: center;
+    }
+    .about-cta .section-heading {
+      color: #fff;
+      max-width: 600px;
+      margin: 0 auto var(--space-5);
+    }
+    .about-cta-sub {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: var(--space-10);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Brand Voice Studio home">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="34" height="34" rx="3" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M9 13h18M9 18h14M9 23h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="27" cy="23" r="2.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Brand Voice Studio</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#for-you">For You</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="blog/">Blog</a>
+        <a href="index.html#contact" class="nav-cta">Inquire</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="index.html#for-you">For You</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="blog/">Blog</a>
+      <a href="index.html#contact" class="nav-cta-mobile">Inquire</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════ 1. HERO ═══════════════════════ -->
+    <section class="article-hero" aria-labelledby="about-hero-heading">
+      <div class="container">
+        <div class="section-label">The Person Behind the Words</div>
+        <h1 id="about-hero-heading" class="article-hero-heading">
+          Hi, I&rsquo;m Jessica Smith &mdash; brand voice copywriter and social media ghostwriter.
+        </h1>
+        <p class="article-lead">
+          My approach is voice-first: every word is shaped by how you actually think and speak, not by what a content template told me to write. I build content from real life, real perspective, and a genuine understanding of what makes your brand distinct.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 2. BIO ═══════════════════════ -->
+    <section class="about-bio-section section" aria-labelledby="bio-heading">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-image-wrap">
+            <img
+              src="jessica-smith.jpg"
+              alt="Jessica Smith, brand voice copywriter and social media ghostwriter"
+              class="about-photo"
+              width="480"
+              height="480"
+              loading="eager"
+            />
+            <div class="about-image-accent" aria-hidden="true"></div>
+          </div>
+          <div class="about-content">
+            <div class="section-label about-bio-label">Background &amp; Approach</div>
+            <h2 id="bio-heading" class="about-bio-heading">
+              Writing that sounds like you &mdash; on your best day, every time.
+            </h2>
+            <p>Content creator, writer, and entrepreneur &mdash; building a digital brand rooted in perspective, presence, and thoughtful storytelling.</p>
+            <p>I create content that is clear, visually compelling, and grounded in real life. My style feels both polished and personal. Rather than fitting into one category, my work reflects the full range of modern womanhood &mdash; shaped by creativity, lived experience, and a strong point of view.</p>
+            <p>With an instinct for what resonates and a voice that feels distinct, I go beyond aesthetics. When I write for you, I bring the same depth, intention, and clarity to your brand that I bring to my own &mdash; turning your everyday ideas and experiences into content that genuinely connects.</p>
+            <div class="about-values">
+              <div class="about-value-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Voice-first writing approach
+              </div>
+              <div class="about-value-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Content rooted in real life, not templates
+              </div>
+              <div class="about-value-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Polished, personal, and platform-aware
+              </div>
+              <div class="about-value-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Every client is a collaboration, not a transaction
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 3. THE STUDIO ═══════════════════════ -->
+    <section class="studio-section" aria-labelledby="studio-heading">
+      <div class="container">
+        <div class="section-label">Brand Voice Studio</div>
+        <h2 id="studio-heading" class="studio-heading">
+          A boutique writing studio for personal brands that refuse to sound generic.
+        </h2>
+        <div class="studio-body">
+          <p>Brand Voice Studio is boutique by design. I work with a selective, limited number of clients at any given time &mdash; not because I can&rsquo;t take on more, but because high-touch work demands real attention. As your <strong style="color:rgba(255,255,255,0.9)">social media ghostwriter</strong>, I learn your voice the way a collaborator does: deeply, over time, with genuine investment in where your brand is going.</p>
+          <p>Whether you&rsquo;re on a <strong style="color:rgba(255,255,255,0.9)">caption writing retainer</strong> or working with me as your dedicated <strong style="color:rgba(255,255,255,0.9)">brand voice copywriter</strong>, the experience is the same: intentional, responsive, and built around your specific goals. No revolving door of writers. No copy-paste content. Just considered, voice-aligned writing that holds up month after month.</p>
+        </div>
+        <div class="studio-pull-quote" role="blockquote">
+          <p>&ldquo;You didn&rsquo;t build a premium brand to sound like everyone else on the internet.&rdquo;</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 4. VALUES / APPROACH ═══════════════════════ -->
+    <section class="values-section section" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-label">How I Work</div>
+        <h2 id="values-heading" class="section-heading">The principles behind every delivery</h2>
+        <div class="values-grid">
+
+          <!-- Card 1 -->
+          <div class="values-card">
+            <div class="values-card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M12 20h9"/>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <div class="values-card-title">Voice First</div>
+            <p class="values-card-body">Every engagement starts with understanding how you naturally think, speak, and communicate. The writing is an extension of you &mdash; not a template dressed in your brand colors.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="values-card">
+            <div class="values-card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+              </svg>
+            </div>
+            <div class="values-card-title">No Templates, Ever</div>
+            <p class="values-card-body">Every caption is written from scratch for your brand, your audience, and your moment. Nothing generic leaves this studio. If it could belong to someone else&rsquo;s feed, it goes back for revision.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="values-card">
+            <div class="values-card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <div class="values-card-title">Long-Term Thinking</div>
+            <p class="values-card-body">The best caption retainers build voice consistency over months, not just polish individual posts. I&rsquo;m invested in your long game &mdash; the cumulative effect of a brand that always sounds unmistakably itself.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 5. STATS STRIP ═══════════════════════ -->
+    <div class="stats-strip" aria-label="Studio quick facts">
+      <div class="container">
+        <div class="stats-inner">
+          <div>
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Captions Written</div>
+          </div>
+          <div class="stat-divider">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Retainer Tiers</div>
+          </div>
+          <div class="stat-divider">
+            <div class="stat-number">1</div>
+            <div class="stat-label">Writer &mdash; Me</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════ 6. TESTIMONIALS ═══════════════════════ -->
+    <section class="testimonials-section section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-label" style="text-align:center">Client Results</div>
+        <h2 id="testimonials-heading" class="section-heading" style="text-align:center">What clients are saying.</h2>
+        <div class="testimonials-grid">
+          <div class="tcard">
+            <div class="tcard-stars">★★★★★</div>
+            <blockquote class="tcard-quote">&ldquo;I kept putting off posting because I could never find the right words. Within the first week of receiving my captions, I published more than I had in the previous two months. They sounded exactly like me &mdash; maybe even better than me on my best day. It&rsquo;s the best investment I&rsquo;ve made in my brand this year.&rdquo;</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">DR</div>
+              <div><div class="tcard-name">Danielle R.</div><div class="tcard-role">Online Business Founder</div></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-stars">★★★★★</div>
+            <blockquote class="tcard-quote">&ldquo;I was skeptical that anyone could capture my voice &mdash; I&rsquo;m very particular about how I communicate. But the captions were so accurate to how I speak that my audience thought I&rsquo;d finally figured out how to be consistent. I haven&rsquo;t written a caption myself in four months.&rdquo;</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">SM</div>
+              <div><div class="tcard-name">Sarah M.</div><div class="tcard-role">Founder &amp; Brand Strategist</div></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard-stars">★★★★★</div>
+            <blockquote class="tcard-quote">&ldquo;The Private Client package changed how I think about content entirely. I went from dreading my posting schedule to genuinely looking forward to it. My engagement is up and I&rsquo;ve had three new clients mention they found me through Instagram &mdash; something that had never happened before.&rdquo;</blockquote>
+            <div class="tcard-author">
+              <div class="tcard-avatar">LK</div>
+              <div><div class="tcard-name">Lauren K.</div><div class="tcard-role">Executive Coach &amp; Speaker</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ 7. CTA ═══════════════════════ -->
+    <section class="about-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" class="section-heading">Ready to work together?</h2>
+        <p class="about-cta-sub">Applications reviewed within 2 business days. Spots are limited.</p>
+        <a href="index.html#contact" class="btn btn-outline-light">Inquire About Availability</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Brand Voice Studio home">
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="34" height="34" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 13h18M9 18h14M9 23h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="27" cy="23" r="2.5" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">Brand Voice Studio</span>
+        </a>
+        <p class="footer-tagline">Refined content support for personal brands, creators, and founders.</p>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <div class="footer-col-heading">Navigation</div>
+          <a href="index.html#for-you">For You</a>
+          <a href="about.html">About</a>
+          <a href="index.html#pricing">Packages</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="blog/">Blog</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-heading">Services</div>
+          <a href="index.html#pricing">Essential Retainer</a>
+          <a href="index.html#pricing">Elevated Retainer</a>
+          <a href="index.html#pricing">Private Client</a>
+          <a href="/free/">Free Guide</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-heading">Connect</div>
+          <a href="https://www.instagram.com/jessica_smith0203/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/jessica.pettigrew3/" target="_blank" rel="noopener">Facebook</a>
+          <a href="blog/">Blog</a>
+          <a href="index.html#contact">Inquire</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="footer-copy">&copy; 2026 Brand Voice Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
