@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Voice Studio | Free Caption Template Pack</title>
+  <style>
+    :root {
+      --ivory: #FAF8F4;
+      --espresso: #1A1208;
+      --terracotta: #B8604A;
+      --gold: #C9A96E;
+      --warm-gray: #7B726B;
+      --border: #E5DBD1;
+      --soft: #F4EFE8;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--espresso);
+      font-family: Calibri, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 48px;
+    }
+
+    .brand-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: var(--terracotta);
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    .brand-icon span {
+      position: absolute;
+      left: 13px;
+      height: 2px;
+      background: var(--ivory);
+      display: block;
+    }
+
+    .brand-icon .line-1 { top: 14px; width: 30px; }
+    .brand-icon .line-2 { top: 26px; width: 22px; }
+    .brand-icon .line-3 { top: 38px; width: 34px; }
+
+    .brand-icon::after {
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--gold);
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+    }
+
+    .wordmark {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1;
+      letter-spacing: 0.01em;
+    }
+
+    .wordmark .studio { color: var(--terracotta); }
+
+    .tagline {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--warm-gray);
+      letter-spacing: 0.08em;
+      text-transform: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      padding: 64px 0 72px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: var(--warm-gray);
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(44px, 7vw, 76px);
+      line-height: 1.05;
+      max-width: 720px;
+    }
+
+    .hero-copy p,
+    .section-copy,
+    .card p,
+    .list-card,
+    .optin-copy,
+    .footer-copy {
+      color: #5E564F;
+    }
+
+    .hero-copy p {
+      max-width: 640px;
+      font-size: 20px;
+      margin: 24px 0 0;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      border: 1px solid transparent;
+      transition: 0.18s ease;
+    }
+
+    .btn-primary {
+      background: var(--terracotta);
+      color: var(--ivory);
+    }
+
+    .btn-secondary {
+      border-color: #D8CDC2;
+      color: var(--espresso);
+      background: transparent;
+    }
+
+    .btn:hover { opacity: 0.94; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: #6A615A;
+      background: transparent;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 34px;
+      background: var(--ivory);
+    }
+
+    .panel p { margin: 16px 0 0; }
+
+    .panel ul {
+      margin: 24px 0 0;
+      padding: 24px 0 0 18px;
+      border-top: 1px solid #E8E0D7;
+    }
+
+    .section {
+      padding: 80px 0;
+      border-top: 1px solid #EEE6DE;
+    }
+
+    .section.white { background: var(--white); }
+    .section.soft { background: var(--ivory); }
+    .section.dark { background: var(--espresso); color: var(--ivory); }
+
+    .section-head {
+      max-width: 820px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.12;
+      margin-top: 18px;
+    }
+
+    .section-head p {
+      margin: 22px auto 0;
+      max-width: 760px;
+      font-size: 19px;
+      color: #5E564F;
+    }
+
+    .grid-3,
+    .grid-2 {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card,
+    .list-card,
+    .audience-card,
+    .optin-box,
+    .footer-box {
+      border: 1px solid var(--border);
+      background: var(--ivory);
+      border-radius: 24px;
+    }
+
+    .card {
+      padding: 30px;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .card p {
+      margin: 16px 0 0;
+      font-size: 16px;
+    }
+
+    .inside-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .inside-copy h2 {
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.12;
+      margin-top: 18px;
+    }
+
+    .inside-copy p {
+      margin-top: 22px;
+      font-size: 19px;
+      color: #5E564F;
+    }
+
+    .list-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .list-card {
+      background: var(--white);
+      padding: 24px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--espresso);
+    }
+
+    .section.dark .section-head p,
+    .section.dark .audience-card {
+      color: #F1EAE2;
+    }
+
+    .section.dark .audience-card {
+      border-color: rgba(255,255,255,0.12);
+      background: transparent;
+      padding: 24px;
+      font-size: 18px;
+    }
+
+    .section.dark .eyebrow {
+      color: var(--gold);
+    }
+
+    .optin-box,
+    .footer-box {
+      background: var(--ivory);
+      padding: 38px;
+    }
+
+    .optin-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .optin-inner h2,
+    .footer-box h2 {
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.12;
+      margin-top: 18px;
+    }
+
+    .optin-inner p,
+    .footer-box p {
+      margin-top: 22px;
+      font-size: 19px;
+    }
+
+    form {
+      margin-top: 32px;
+    }
+
+    .fields {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid #D8CDC2;
+      background: var(--white);
+      color: var(--espresso);
+      border-radius: 999px;
+      padding: 16px 18px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input::placeholder { color: #9A9088; }
+    input:focus { border-color: var(--terracotta); }
+
+    .submit {
+      width: 100%;
+      margin-top: 14px;
+      border: none;
+      border-radius: 999px;
+      background: var(--terracotta);
+      color: var(--ivory);
+      padding: 16px 18px;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+    }
+
+    .fine {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--warm-gray);
+    }
+
+    .footer-brand {
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 980px) {
+      .hero,
+      .inside-layout,
+      .grid-3,
+      .grid-2,
+      .list-grid,
+      .fields {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </div>
+      <div>
+        <div class="wordmark"><span>Brand Voice</span> <span class="studio">Studio</span></div>
+        <div class="tagline">Done-for-you captions that sound like you.</div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Free template pack</div>
+        <h1>Your brand has a voice. Start with stronger words.</h1>
+        <p>Download a refined fill-in-the-blank caption template pack for business owners who want to post with more clarity, more consistency, and a voice that feels unmistakably their own.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#optin">Get the Free Template Pack</a>
+          <a class="btn btn-secondary" href="#inside">View What’s Inside</a>
+        </div>
+        <div class="pill-row">
+          <div class="pill">24 caption templates</div>
+          <div class="pill">Voice-first structure</div>
+          <div class="pill">Built for founders and personal brands</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="eyebrow">Inside the free download</div>
+        <h2>Captions That Sound Like You</h2>
+        <p>A polished template pack for business owners who need a strong starting point when writing content that sounds clear, personal, and on-brand.</p>
+        <ul>
+          <li>Authority captions that sound considered and credible</li>
+          <li>Story-driven prompts that feel personal without feeling messy</li>
+          <li>Soft-sell templates that support visibility without pressure</li>
+          <li>Simple caption frameworks you can return to whenever content feels heavy</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <section class="section white">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Why this exists</div>
+        <h2>Content should feel considered, not constantly forced.</h2>
+        <p>You know your business is strong. The problem is not the quality of your work. It is the weight of having to turn that work into polished content every single week. This free template pack helps lighten that load.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Write with more ease</h3>
+          <p>Use refined caption structures instead of starting from zero every time you need to post.</p>
+        </div>
+        <div class="card">
+          <h3>Sound more aligned</h3>
+          <p>Shape your content around your own voice so your brand sounds clear, polished, and recognizably yours.</p>
+        </div>
+        <div class="card">
+          <h3>Stay visible gracefully</h3>
+          <p>Keep your presence consistent without letting content become a weekly drain on your energy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="inside">
+    <div class="wrap inside-layout">
+      <div class="inside-copy">
+        <div class="eyebrow">What’s inside</div>
+        <h2>A cleaner starting point for the days you do not want to invent content from scratch.</h2>
+        <p>Inside the template pack, you’ll get fill-in-the-blank caption prompts designed to help you say something meaningful, polished, and true to your brand without overworking every sentence.</p>
+      </div>
+      <div class="list-grid">
+        <div class="list-card">24 fill-in-the-blank caption templates</div>
+        <div class="list-card">Authority, story, engagement, and soft-sell prompts</div>
+        <div class="list-card">Reusable caption formulas for a stronger writing rhythm</div>
+        <div class="list-card">A quick guide to help your content sound more natural and refined</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Who it’s for</div>
+        <h2>For the founder or personal brand who wants content to feel polished again.</h2>
+      </div>
+      <div class="grid-2">
+        <div class="audience-card">You second-guess every caption before it goes live.</div>
+        <div class="audience-card">You know your business deserves stronger words than the rushed version you post at the last minute.</div>
+        <div class="audience-card">You want your content to sound like you, only clearer and more intentional.</div>
+        <div class="audience-card">You are ready for visibility that feels more elegant and less exhausting.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="optin">
+    <div class="wrap">
+      <div class="optin-box">
+        <div class="optin-inner">
+          <div class="eyebrow">Get the free template pack</div>
+          <h2>Start with stronger words.</h2>
+          <p class="optin-copy">Download <strong style="color:#1A1208; font-weight:600;">Captions That Sound Like You</strong> and get a refined set of templates designed to make writing feel lighter, clearer, and more aligned with the brand you are building.</p>
+          <form>
+            <div class="fields">
+              <input type="text" placeholder="First name" />
+              <input type="email" placeholder="Email address" />
+            </div>
+            <button class="submit" type="button">Send Me the Templates</button>
+          </form>
+          <div class="fine">By signing up, you’ll receive the free template pack and a short follow-up sequence from Brand Voice Studio with thoughtful content support and offer details.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <div class="footer-box">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon" aria-hidden="true">
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+              <span class="line-3"></span>
+            </div>
+            <div>
+              <div class="wordmark"><span>Brand Voice</span> <span class="studio">Studio</span></div>
+              <div class="tagline">Done-for-you captions that sound like you.</div>
+            </div>
+          </div>
+        </div>
+        <h2>Use the templates yourself, or hand the writing off completely.</h2>
+        <p class="footer-copy">Brand Voice Studio offers done-for-you caption writing for founders and personal brands who want a more polished, voice-aligned presence without carrying the full weight of content alone.</p>
+        <div class="button-row">
+          <a class="btn btn-secondary" href="https://thebrandstudio.studio">Visit The Brand Studio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
