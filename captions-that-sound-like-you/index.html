@@ -3,14 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting…</title>
-  <meta http-equiv="refresh" content="0; url=/free/" />
-  <link rel="canonical" href="/free/" />
-  <script>
-    window.location.replace('/free/');
-  </script>
+  <title>Captions That Sound Like You | Brand Voice Studio</title>
+  <meta name="description" content="Start with stronger words. Continue to the free template pack funnel from Brand Voice Studio." />
+  <style>
+    :root {
+      --ivory: #FAF8F4;
+      --espresso: #1A1208;
+      --terracotta: #B8604A;
+      --gold: #C9A96E;
+      --warm-gray: #7B726B;
+      --border: #E5DBD1;
+      --white: #FFFFFF;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--espresso);
+      font-family: Calibri, Arial, sans-serif;
+    }
+    .wrap {
+      width: min(960px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 48px;
+    }
+    .brand-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      background: var(--terracotta);
+      position: relative;
+      flex: 0 0 auto;
+    }
+    .brand-icon span {
+      position: absolute;
+      left: 13px;
+      height: 2px;
+      background: var(--ivory);
+      display: block;
+    }
+    .brand-icon .line-1 { top: 14px; width: 30px; }
+    .brand-icon .line-2 { top: 26px; width: 22px; }
+    .brand-icon .line-3 { top: 38px; width: 34px; }
+    .brand-icon::after {
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--gold);
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+    }
+    .wordmark {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1;
+      letter-spacing: 0.01em;
+    }
+    .wordmark .studio { color: var(--terracotta); }
+    .tagline {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--warm-gray);
+      letter-spacing: 0.08em;
+    }
+    .hero {
+      min-height: calc(100vh - 110px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0 80px;
+    }
+    .card {
+      width: 100%;
+      max-width: 760px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--white);
+      padding: 56px 40px;
+      text-align: center;
+    }
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: var(--warm-gray);
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.06;
+      font-weight: 500;
+    }
+    p {
+      margin: 22px auto 0;
+      max-width: 620px;
+      font-size: 20px;
+      line-height: 1.65;
+      color: #5E564F;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--terracotta);
+      color: var(--ivory);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--espresso);
+      border-color: #D8CDC2;
+    }
+    .note {
+      margin-top: 18px;
+      font-size: 14px;
+      color: var(--warm-gray);
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to the free template funnel. <a href="/free/">Click here</a> if you are not redirected.</p>
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </div>
+      <div>
+        <div class="wordmark"><span>Brand Voice</span> <span class="studio">Studio</span></div>
+        <div class="tagline">Done-for-you captions that sound like you.</div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="card">
+        <div class="eyebrow">Get the free template pack</div>
+        <h1>Start with stronger words.</h1>
+        <p>Continue to the free template pack funnel to get <strong>Captions That Sound Like You</strong> and start posting with more clarity, more consistency, and a voice that feels like your own.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="/free/">Continue to the Free Template Pack</a>
+          <a class="btn btn-secondary" href="https://thebrandstudio.studio">Visit The Brand Studio</a>
+        </div>
+        <div class="note">This page leads into your existing working opt-in flow.</div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
