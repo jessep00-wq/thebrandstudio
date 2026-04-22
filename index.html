@@ -83,6 +83,133 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .transformation-section {
+      background: var(--color-bg);
+      padding-block: clamp(var(--space-16), 8vw, var(--space-32));
+    }
+    .transformation-header {
+      text-align: center;
+      max-width: var(--content-narrow);
+      margin-inline: auto;
+      margin-bottom: var(--space-16);
+    }
+    .transformation-heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--color-text);
+      margin-top: var(--space-3);
+      margin-bottom: var(--space-5);
+    }
+    .transformation-subhead {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin: 0;
+    }
+    .transformation-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      align-items: start;
+    }
+    .bac-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .bac-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .bac-card__img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-xl);
+    }
+    .transformation-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-5);
+      margin-top: var(--space-16);
+      text-align: center;
+    }
+    .transformation-cta__text {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+    .transformation-section .btn-primary {
+      display: inline-block;
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: var(--space-4) var(--space-8);
+      border-radius: var(--radius-full);
+      transition: background var(--transition);
+    }
+    .transformation-section .btn-primary:hover {
+      background: var(--color-primary-hover);
+    }
+    @media (max-width: 900px) {
+      .transformation-track {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .transformation-track {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: var(--space-4);
+        padding-bottom: var(--space-4);
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .transformation-track::-webkit-scrollbar {
+        display: none;
+      }
+      .bac-card {
+        flex: 0 0 82vw;
+        max-width: 340px;
+        scroll-snap-align: start;
+      }
+    }
+    [data-theme="dark"] .transformation-section {
+      background: var(--color-premium-bg);
+    }
+    [data-theme="dark"] .transformation-heading {
+      color: var(--color-premium-text);
+    }
+    [data-theme="dark"] .transformation-subhead {
+      color: var(--color-premium-muted);
+    }
+    [data-theme="dark"] .bac-card {
+      background: var(--color-surface-dark);
+      border-color: var(--color-premium-border);
+    }
+    [data-theme="dark"] .transformation-cta__text {
+      color: var(--color-premium-muted);
+    }
+  </style>
 </head>
 <body>
 
@@ -220,6 +347,40 @@
         <p class="problem-body">You know consistent, high-quality content is the engine of modern brand growth. But staring at a blank screen on a Sunday evening isn&rsquo;t how you should be spending your time. When you rush your captions, your brand loses its polish. When you delegate to a cheap agency, you lose your perspective &mdash; and end up rewriting their work anyway, defeating the purpose entirely.</p>
         <div class="problem-quote-box">
           <p>Brand Voice Studio provides <strong class="problem-quote-strong">considered, voice-aligned writing support</strong>. You are not just paying for captions; you are investing in the clarity and time that comes from having your content handled elegantly &mdash; by a writer who understands your industry, your audience, and your voice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ THE TRANSFORMATION ═══════════════════════ -->
+    <section class="transformation-section section" aria-label="The Transformation">
+      <div class="container">
+        <div class="transformation-header">
+          <div class="section-label" style="text-align:center;">The Work</div>
+          <h2 class="transformation-heading">Before the rewrite.<br>After the rewrite.</h2>
+          <p class="transformation-subhead">This is what considered, voice-aligned writing actually does — across five different industries, five different voices.</p>
+        </div>
+
+        <div class="transformation-track" role="list">
+          <div class="bac-card" role="listitem">
+            <img src="/images/01_founder_coach_improved.png" alt="Before and after copywriting example for a Founder Coach: From surface-level answers to real progress." class="bac-card__img" loading="lazy" width="896" height="1200" />
+          </div>
+          <div class="bac-card" role="listitem">
+            <img src="/images/02_med_spa_improved.png" alt="Before and after copywriting example for a Med Spa: From good results to quietly exceptional." class="bac-card__img" loading="lazy" width="896" height="1200" />
+          </div>
+          <div class="bac-card" role="listitem">
+            <img src="/images/03_brand_photographer_improved.png" alt="Before and after copywriting example for a Brand Photographer: From taking photos to building trust." class="bac-card__img" loading="lazy" width="896" height="1200" />
+          </div>
+          <div class="bac-card" role="listitem">
+            <img src="/images/04_home_organizer_improved.png" alt="Before and after copywriting example for a Home Organizer: From a tidy space to a lighter life." class="bac-card__img" loading="lazy" width="896" height="1200" />
+          </div>
+          <div class="bac-card" role="listitem">
+            <img src="/images/05_copywriter_improved.png" alt="Before and after copywriting example for a Copywriter: From saying everything to saying what matters." class="bac-card__img" loading="lazy" width="896" height="1200" />
+          </div>
+        </div>
+
+        <div class="transformation-cta">
+          <p class="transformation-cta__text">Your brand deserves messaging this clear.</p>
+          <a href="#contact" class="btn-primary">Check Availability</a>
         </div>
       </div>
     </section>
